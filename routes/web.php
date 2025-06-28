@@ -5,3 +5,5 @@ use App\Http\Controllers\PageController;
 
 Route::get('/', [PageController::class, 'home']);
 Route::get('/about', [PageController::class, 'about']);
+Route::get('/contact', [PageController::class, 'contactform']);
+Route::post('/contact', [PageController::class, 'submitContent']);
