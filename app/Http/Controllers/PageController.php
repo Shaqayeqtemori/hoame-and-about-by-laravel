@@ -8,11 +8,11 @@ class PageController extends Controller
 {
     public function home()
     {
-        return view('home');
+        return view('home')->with('success', 'Successfully loaded home page.');
     }
 
     public function about()
     {
-        return view('about');
+        return view('about')->with('error', 'Oops! Failed.');
     }
 }
