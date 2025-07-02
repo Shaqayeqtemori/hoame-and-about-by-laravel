@@ -22,9 +22,7 @@
     </style>
 </head>
 <body>
-    <h1>
-        Welcome, {{ Auth::check() ? Auth::user()->name : 'Guest' }}!
-    </h1>
+   <h1>Welcome, {{ Auth::check() ? Auth::user()->name : 'Guest' }}!</h1>
     <p>I wish You enjoy !</p>
 </body>
 </html>
